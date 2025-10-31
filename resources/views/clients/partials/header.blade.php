@@ -50,7 +50,8 @@
                 <div class="col">
                     <div class="site-logo-wrap">
                         <div class="site-logo">
-                            <a href="index.html"><img src="img/logo-2.png" alt="Logo"></a>
+                            <a href="index.html"><img src="{{ asset('assets/clients/img/logo-2.png') }}"
+                                    alt="Logo"></a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +151,7 @@
         <div class="mini-cart-product-area ltn__scrollbar">
             <div class="mini-cart-item clearfix">
                 <div class="mini-cart-img">
-                    <a href="#"><img src="img/product/1.png" alt="Image"></a>
+                    <a href="#"><img src="{{ asset('assets/clients/img/product/1.png') }}" alt="Image"></a>
                     <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
                 </div>
                 <div class="mini-cart-info">
@@ -160,7 +161,7 @@
             </div>
             <div class="mini-cart-item clearfix">
                 <div class="mini-cart-img">
-                    <a href="#"><img src="img/product/2.png" alt="Image"></a>
+                    <a href="#"><img src="{{ asset('assets/clients/img/product/2.png') }}" alt="Image"></a>
                     <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
                 </div>
                 <div class="mini-cart-info">
@@ -170,7 +171,7 @@
             </div>
             <div class="mini-cart-item clearfix">
                 <div class="mini-cart-img">
-                    <a href="#"><img src="img/product/3.png" alt="Image"></a>
+                    <a href="#"><img src="{{ asset('assets/clients/img/product/3.png') }}" alt="Image"></a>
                     <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
                 </div>
                 <div class="mini-cart-info">
@@ -180,7 +181,7 @@
             </div>
             <div class="mini-cart-item clearfix">
                 <div class="mini-cart-img">
-                    <a href="#"><img src="img/product/4.png" alt="Image"></a>
+                    <a href="#"><img src="{{ asset('assets/clients/img/product/4.png') }}" alt="Image"></a>
                     <span class="mini-cart-item-delete"><i class="icon-cancel"></i></span>
                 </div>
                 <div class="mini-cart-info">

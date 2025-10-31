@@ -1,4 +1,4 @@
-<!-- FEATURE AREA START ( Feature - 3) -->
+<!-- KHU VỰC TÍNH NĂNG BẮT ĐẦU (Feature - 3) -->
 <div class="ltn__feature-area before-bg-bottom-2 mb--30--- plr--5">
     <div class="container-fluid">
         <div class="row">
@@ -8,48 +8,48 @@
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="ltn__feature-item ltn__feature-item-8">
                                 <div class="ltn__feature-icon">
-                                    <img src="img/icons/icon-img/11.png" alt="#">
+                                    <img src="{{ asset('assets/clients/img/icons/icon-img/11.png') }}" alt="#">
                                 </div>
                                 <div class="ltn__feature-info">
-                                    <h4>Curated Products</h4>
-                                    <p>Provide Curated Products for
-                                        all product over $100</p>
+                                    <h4>Sản phẩm được chọn lọc</h4>
+                                    <p>Cung cấp các sản phẩm được chọn lọc
+                                        cho mọi đơn hàng trên 100$</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="ltn__feature-item ltn__feature-item-8">
                                 <div class="ltn__feature-icon">
-                                    <img src="img/icons/icon-img/12.png" alt="#">
+                                    <img src="{{ asset('assets/clients/img/icons/icon-img/12.png') }}" alt="#">
                                 </div>
                                 <div class="ltn__feature-info">
-                                    <h4>Handmade</h4>
-                                    <p>We ensure the product quality
-                                        that is our main goal</p>
+                                    <h4>Thủ công</h4>
+                                    <p>Chúng tôi đảm bảo chất lượng sản phẩm —
+                                        đó là mục tiêu hàng đầu của chúng tôi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="ltn__feature-item ltn__feature-item-8">
                                 <div class="ltn__feature-icon">
-                                    <img src="img/icons/icon-img/13.png" alt="#">
+                                    <img src="{{ asset('assets/clients/img/icons/icon-img/13.png') }}" alt="#">
                                 </div>
                                 <div class="ltn__feature-info">
-                                    <h4>Natural Food</h4>
-                                    <p>Return product within 3 days
-                                        for any product you buy</p>
+                                    <h4>Thực phẩm tự nhiên</h4>
+                                    <p>Đổi trả sản phẩm trong vòng 3 ngày
+                                        cho bất kỳ sản phẩm nào bạn mua</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
                             <div class="ltn__feature-item ltn__feature-item-8">
                                 <div class="ltn__feature-icon">
-                                    <img src="img/icons/icon-img/14.png" alt="#">
+                                    <img src="{{ asset('assets/clients/img/icons/icon-img/14.png') }}" alt="#">
                                 </div>
                                 <div class="ltn__feature-info">
-                                    <h4>Free home delivery</h4>
-                                    <p>We ensure the product quality
-                                        that you can trust easily</p>
+                                    <h4>Giao hàng tận nhà miễn phí</h4>
+                                    <p>Chúng tôi đảm bảo chất lượng sản phẩm
+                                        để bạn có thể yên tâm tin tưởng</p>
                                 </div>
                             </div>
                         </div>
@@ -59,4 +59,4 @@
         </div>
     </div>
 </div>
-<!-- FEATURE AREA END -->
+<!-- KHU VỰC TÍNH NĂNG KẾT THÚC -->
