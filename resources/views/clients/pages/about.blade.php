@@ -2,33 +2,35 @@
 
 @section('title', 'Về chúng tôi')
 
-@section('breadcrumb', 'About Us')
+@section('breadcrumb', 'Về chúng tôi')
 
 @section('content')
-    <!-- ABOUT US AREA START -->
+    <!-- KHU VỰC GIỚI THIỆU BẮT ĐẦU -->
     <div class="ltn__about-us-area pt-120--- pb-120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-img-wrap about-img-left">
-                        <img src="{{ asset('assets/clients/img/others/6.png') }}" alt="About Us Image">
+                        <img src="{{ asset('assets/clients/img/others/6.png') }}" alt="Ảnh giới thiệu">
                     </div>
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2">
-                            <h6 class="section-subtitle ltn__secondary-color">Know More About Shop</h6>
-                            <h1 class="section-title">Trusted Organic <br class="d-none d-md-block"> Food Store</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</p>
+                            <h6 class="section-subtitle ltn__secondary-color">Tìm hiểu thêm về cửa hàng</h6>
+                            <h1 class="section-title">Cửa hàng thực phẩm hữu cơ<br class="d-none d-md-block"> đáng tin cậy
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore</p>
                         </div>
-                        <p>sellers who aspire to be good, do good, and spread goodness. We
-                            democratic, self-sustaining, two-sided marketplace which thrives
-                            on trust and is built on community and quality content.</p>
+                        <p>Chúng tôi là những người bán hàng mong muốn mang lại điều tốt, làm điều tốt và lan tỏa điều tốt
+                            đẹp.
+                            Một thị trường dân chủ, tự vận hành, hai chiều – được xây dựng trên niềm tin, cộng đồng và nội
+                            dung chất lượng.</p>
                         <div class="about-author-info d-flex">
                             <div class="author-name-designation  align-self-center">
                                 <h4 class="mb-0">Jerry Henson</h4>
-                                <small>/ Shop Director</small>
+                                <small>/ Giám đốc cửa hàng</small>
                             </div>
                             <div class="author-sign">
                                 <img src="{{ asset('assets/clients/img/icons/icon-img/author-sign.png') }}" alt="#">
@@ -39,16 +41,16 @@
             </div>
         </div>
     </div>
-    <!-- ABOUT US AREA END -->
+    <!-- KHU VỰC GIỚI THIỆU KẾT THÚC -->
 
-    <!-- FEATURE AREA START ( Feature - 6) -->
+    <!-- KHU VỰC TÍNH NĂNG BẮT ĐẦU -->
     <div class="ltn__feature-area section-bg-1 pt-115 pb-90">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area ltn__section-title-2 text-center">
-                        <h6 class="section-subtitle ltn__secondary-color">// features //</h6>
-                        <h1 class="section-title">Why Choose Us<span>.</span></h1>
+                        <h6 class="section-subtitle ltn__secondary-color">// Tính năng //</h6>
+                        <h1 class="section-title">Tại sao chọn chúng tôi<span>.</span></h1>
                     </div>
                 </div>
             </div>
@@ -60,11 +62,11 @@
                                 <span><img src="{{ asset('assets/clients/img/icons/icon-img/21.png') }}"
                                         alt="#"></span>
                             </div>
-                            <h3><a href="service-details.html">All Kind Brand</a></h3>
+                            <h3><a href="service-details.html">Đa dạng thương hiệu</a></h3>
                         </div>
                         <div class="ltn__feature-info">
-                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or
-                                incididunt ut labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore.</p>
                         </div>
                     </div>
                 </div>
@@ -75,11 +77,11 @@
                                 <span><img src="{{ asset('assets/clients/img/icons/icon-img/22.png') }}"
                                         alt="#"></span>
                             </div>
-                            <h3><a href="service-details.html">Curated Products</a></h3>
+                            <h3><a href="service-details.html">Sản phẩm được chọn lọc</a></h3>
                         </div>
                         <div class="ltn__feature-info">
-                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or
-                                incididunt ut labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore.</p>
                         </div>
                     </div>
                 </div>
@@ -90,416 +92,159 @@
                                 <span><img src="{{ asset('assets/clients/img/icons/icon-img/23.png') }}"
                                         alt="#"></span>
                             </div>
-                            <h3><a href="service-details.html">Pesticide Free Goods</a></h3>
+                            <h3><a href="service-details.html">Hàng hóa không thuốc trừ sâu</a></h3>
                         </div>
                         <div class="ltn__feature-info">
-                            <p>Lorem ipsum dolor sit ame it, consectetur adipisicing elit, sed do eiusmod te mp or
-                                incididunt ut labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FEATURE AREA END -->
+    <!-- KHU VỰC TÍNH NĂNG KẾT THÚC -->
 
-    <!-- TEAM AREA START (Team - 3) -->
+    <!-- KHU VỰC ĐỘI NGŨ BẮT ĐẦU -->
     <div class="ltn__team-area pt-115 pb-90">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2 text-center">
-                        <h1 class="section-title white-color---">Team Member</h1>
+                <div class="col-lg-12 text-center">
+                    <div class="section-title-area ltn__section-title-2">
+                        <h1 class="section-title">Thành viên đội ngũ</h1>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="ltn__team-item">
-                        <div class="team-img">
-                            <img src="{{ asset('assets/clients/img/team/1.jpg') }}" alt="Image">
-                        </div>
-                        <div class="team-info">
-                            <h6 class="ltn__secondary-color">// founder //</h6>
-                            <h4><a href="team-details.html">Rosalina D. William</a></h4>
-                            <div class="ltn__social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                </ul>
+                @foreach ([1, 2, 3, 4] as $num)
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="ltn__team-item">
+                            <div class="team-img">
+                                <img src="{{ asset('assets/clients/img/team/' . $num . '.jpg') }}" alt="Thành viên">
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="ltn__team-item">
-                        <div class="team-img">
-                            <img src="{{ asset('assets/clients/img/team/2.jpg') }}" alt="Image">
-                        </div>
-                        <div class="team-info">
-                            <h6 class="ltn__secondary-color">// founder //</h6>
-                            <h4><a href="team-details.html">Rosalina D. William</a></h4>
-                            <div class="ltn__social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="ltn__team-item">
-                        <div class="team-img">
-                            <img src="{{ asset('assets/clients/img/team/3.jpg') }}" alt="Image">
-                        </div>
-                        <div class="team-info">
-                            <h6 class="ltn__secondary-color">// founder //</h6>
-                            <h4><a href="team-details.html">Rosalina D. William</a></h4>
-                            <div class="ltn__social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="ltn__team-item">
-                        <div class="team-img">
-                            <img src="{{ asset('assets/clients/img/team/4.jpg') }}" alt="Image">
-                        </div>
-                        <div class="team-info">
-                            <h6 class="ltn__secondary-color">// founder //</h6>
-                            <h4><a href="team-details.html">Rosalina D. William</a></h4>
-                            <div class="ltn__social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- TEAM AREA END -->
-
-    <!-- CALL TO ACTION START (call-to-action-5) -->
-    <div class="call-to-action-area call-to-action-5 bg-image bg-overlay-theme-90 pt-40 pb-25 d-none"
-        data-bg="img/bg/13.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="call-to-action-inner call-to-action-inner-5 text-center">
-                        <h2 class="white-color text-decoration">24/7 Availability, Make <a href="contact.html">An
-                                Appointment</a></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CALL TO ACTION END -->
-
-    <!-- PROGRESS BAR AREA START -->
-    <div class="ltn__progress-bar-area before-bg-right pt-115 pb-95 d-none">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="ltn__progress-bar-wrap">
-                        <div class="section-title-area ltn__section-title-2">
-                            <h6 class="section-subtitle ltn__secondary-color">// skills</h6>
-                            <h1 class="section-title">We Have A Skillest
-                                Team Ever<span>.</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore</p>
-                        </div>
-                        <div class="ltn__progress-bar-inner">
-                            <div class="ltn__progress-bar-item">
-                                <p>Car Repair</p>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
-                                        data-wow-delay=".5s" role="progressbar" style="width: 72%">
-                                        <span>72%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ltn__progress-bar-item">
-                                <p>Car Rental Service</p>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
-                                        data-wow-delay=".5s" role="progressbar" style="width: 74%">
-                                        <span>74%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ltn__progress-bar-item">
-                                <p>Car Cleaning & Parts</p>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s"
-                                        data-wow-delay=".5s" role="progressbar" style="width: 81%">
-                                        <span>81%</span>
-                                    </div>
+                            <div class="team-info">
+                                <h6 class="ltn__secondary-color">// Người sáng lập //</h6>
+                                <h4><a href="team-details.html">Rosalina D. William</a></h4>
+                                <div class="ltn__social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="ltn__video-bg-img ltn__video-popup-height-500 bg-overlay-black-50-- bg-image ml-30"
-                        data-bg="img/others/5.jpg">
-                        <a class="ltn__video-icon-2 ltn__video-icon-2-border---"
-                            href="https://www.youtube.com/embed/eWUxqVFBq74?autoplay=1&amp;showinfo=0"
-                            data-rel="lightcase:myCollection">
-                            <i class="fa fa-play"></i>
-                        </a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- PROGRESS BAR AREA END -->
+    <!-- KHU VỰC ĐỘI NGŨ KẾT THÚC -->
 
-    <!-- TESTIMONIAL AREA START (testimonial-4) -->
-    <div class="ltn__testimonial-area section-bg-1 pt-115 pb-70">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2 text-center">
-                        <h6 class="section-subtitle ltn__secondary-color">// Testimonials</h6>
-                        <h1 class="section-title">Clients Feedbacks<span>.</span></h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltn__testimonial-slider-3-active slick-arrow-1 slick-arrow-1-inner">
-                <div class="col-lg-12">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-4">
-                        <div class="ltn__testimoni-img">
-                            <img src="{{ asset('assets/clients/img/testimonial/6.jpg') }}" alt="#">
-                        </div>
-                        <div class="ltn__testimoni-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. </p>
-                            <h4>Rosalina D. William</h4>
-                            <h6>Founder</h6>
-                        </div>
-                        <div class="ltn__testimoni-bg-icon">
-                            <i class="far fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-4">
-                        <div class="ltn__testimoni-img">
-                            <img src="{{ asset('assets/clients/img/testimonial/7.jpg') }}" alt="#">
-                        </div>
-                        <div class="ltn__testimoni-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. </p>
-                            <h4>Rosalina D. William</h4>
-                            <h6>Founder</h6>
-                        </div>
-                        <div class="ltn__testimoni-bg-icon">
-                            <i class="far fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-4">
-                        <div class="ltn__testimoni-img">
-                            <img src="{{ asset('assets/clients/img/testimonial/1.jpg') }}" alt="#">
-                        </div>
-                        <div class="ltn__testimoni-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. </p>
-                            <h4>Rosalina D. William</h4>
-                            <h6>Founder</h6>
-                        </div>
-                        <div class="ltn__testimoni-bg-icon">
-                            <i class="far fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-4">
-                        <div class="ltn__testimoni-img">
-                            <img src="{{ asset('assets/clients/img/testimonial/2.jpg') }}" alt="#">
-                        </div>
-                        <div class="ltn__testimoni-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. </p>
-                            <h4>Rosalina D. William</h4>
-                            <h6>Founder</h6>
-                        </div>
-                        <div class="ltn__testimoni-bg-icon">
-                            <i class="far fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-4">
-                        <div class="ltn__testimoni-img">
-                            <img src="{{ asset('assets/clients/img/testimonial/5.jpg') }}" alt="#">
-                        </div>
-                        <div class="ltn__testimoni-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. </p>
-                            <h4>Rosalina D. William</h4>
-                            <h6>Founder</h6>
-                        </div>
-                        <div class="ltn__testimoni-bg-icon">
-                            <i class="far fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!-- TESTIMONIAL AREA END -->
-
-    <!-- FAQ AREA START (faq-2) (ID > accordion_2) -->
+    <!-- KHU VỰC CÂU HỎI THƯỜNG GẶP -->
     <div class="ltn__faq-area pt-115 pb-120">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2 text-center">
-                        <h1 class="section-title white-color---">Some Questions</h1>
-                    </div>
-                </div>
+            <div class="text-center mb-5">
+                <h1 class="section-title">Một số câu hỏi thường gặp</h1>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="ltn__faq-inner ltn__faq-inner-2">
-                        <div id="accordion_2">
-                            <!-- card -->
-                            <div class="card">
-                                <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-item-2-1" aria-expanded="false">
-                                    How to buy a product?
-                                </h6>
-                                <div id="faq-item-2-1" class="collapse" data-parent="#accordion_2">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend
-                                            donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat
-                                            interdum. Condimentum lacinia quis vel eros donec ac.</p>
-                                    </div>
+                    <div id="accordion_2" class="ltn__faq-inner ltn__faq-inner-2">
+                        <div class="card">
+                            <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse" data-bs-target="#faq-item-2-1">
+                                Làm sao để mua sản phẩm?
+                            </h6>
+                            <div id="faq-item-2-1" class="collapse" data-parent="#accordion_2">
+                                <div class="card-body">
+                                    <p>Bạn có thể duyệt sản phẩm, thêm vào giỏ hàng và thanh toán trực tuyến dễ dàng. Chúng
+                                        tôi hỗ trợ nhiều phương thức thanh toán an toàn.</p>
                                 </div>
                             </div>
-                            <!-- card -->
-                            <div class="card">
-                                <h6 class="ltn__card-title" data-bs-toggle="collapse" data-bs-target="#faq-item-2-2"
-                                    aria-expanded="true">
-                                    How can i make refund from your website?
-                                </h6>
-                                <div id="faq-item-2-2" class="collapse show" data-parent="#accordion_2">
-                                    <div class="card-body">
-                                        <div class="ltn__video-img alignleft">
-                                            <img src="{{ asset('assets/clients/img/bg/17.jpg') }}"
-                                                alt="video popup bg image">
-                                            <a class="ltn__video-icon-2 ltn__video-icon-2-small ltn__video-icon-2-border----"
-                                                href="https://www.youtube.com/embed/LjCzPp-MK48?autoplay=1&amp;showinfo=0"
-                                                data-rel="lightcase:myCollection">
-                                                <i class="fa fa-play"></i>
-                                            </a>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Scelerisque </p>
+                        </div>
+                        <div class="card">
+                            <h6 class="ltn__card-title" data-bs-toggle="collapse" data-bs-target="#faq-item-2-2">
+                                Làm thế nào để hoàn tiền?
+                            </h6>
+                            <div id="faq-item-2-2" class="collapse show" data-parent="#accordion_2">
+                                <div class="card-body">
+                                    <div class="ltn__video-img alignleft">
+                                        <img src="{{ asset('assets/clients/img/bg/17.jpg') }}" alt="video popup bg image">
+                                        <a class="ltn__video-icon-2 ltn__video-icon-2-small"
+                                            href="https://www.youtube.com/embed/LjCzPp-MK48?autoplay=1&showinfo=0"
+                                            data-rel="lightcase:myCollection">
+                                            <i class="fa fa-play"></i>
+                                        </a>
                                     </div>
+                                    <p>Bạn có thể gửi yêu cầu hoàn tiền qua tài khoản cá nhân hoặc liên hệ đội ngũ hỗ trợ
+                                        khách hàng của chúng tôi.</p>
                                 </div>
                             </div>
-                            <!-- card -->
-                            <div class="card">
-                                <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-item-2-3" aria-expanded="false">
-                                    I am a new user. How should I start?
-                                </h6>
-                                <div id="faq-item-2-3" class="collapse" data-parent="#accordion_2">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend
-                                            donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat
-                                            interdum. Condimentum lacinia quis vel eros donec ac.</p>
-                                    </div>
+                        </div>
+                        <div class="card">
+                            <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
+                                data-bs-target="#faq-item-2-3">
+                                Tôi là người dùng mới, bắt đầu như thế nào?
+                            </h6>
+                            <div id="faq-item-2-3" class="collapse" data-parent="#accordion_2">
+                                <div class="card-body">
+                                    <p>Hãy tạo tài khoản, xác minh email, sau đó bạn có thể bắt đầu mua sắm ngay. Nếu cần,
+                                        hãy xem hướng dẫn trong phần “Trợ giúp”.</p>
                                 </div>
                             </div>
-                            <!-- card -->
-                            <div class="card">
-                                <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-item-2-4" aria-expanded="false">
-                                    Returns and refunds
-                                </h6>
-                                <div id="faq-item-2-4" class="collapse" data-parent="#accordion_2">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend
-                                            donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat
-                                            interdum. Condimentum lacinia quis vel eros donec ac.</p>
-                                    </div>
+                        </div>
+                        <div class="card">
+                            <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
+                                data-bs-target="#faq-item-2-4">
+                                Chính sách đổi trả & hoàn tiền
+                            </h6>
+                            <div id="faq-item-2-4" class="collapse" data-parent="#accordion_2">
+                                <div class="card-body">
+                                    <p>Chúng tôi chấp nhận đổi trả sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng nếu sản
+                                        phẩm bị lỗi hoặc không đúng mô tả.</p>
                                 </div>
                             </div>
-                            <!-- card -->
-                            <div class="card">
-                                <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
-                                    data-bs-target="#faq-item-2-5" aria-expanded="false">
-                                    Are my details secured?
-                                </h6>
-                                <div id="faq-item-2-5" class="collapse" data-parent="#accordion_2">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend
-                                            donec pretium vulputate sapien nec sagittis. Proin libero nunc consequat
-                                            interdum. Condimentum lacinia quis vel eros donec ac. Mauris sit amet
-                                            massa vitae tortor. Quisque id diam vel quam elementum pulvinar. Gravida
-                                            in fermentum et sollicitudin ac orci phasellus. Facilisis gravida neque
-                                            convallis a cras semper. Non arcu risus quis varius quam quisque id.</p>
-                                    </div>
+                        </div>
+                        <div class="card">
+                            <h6 class="collapsed ltn__card-title" data-bs-toggle="collapse"
+                                data-bs-target="#faq-item-2-5">
+                                Thông tin cá nhân của tôi có được bảo mật không?
+                            </h6>
+                            <div id="faq-item-2-5" class="collapse" data-parent="#accordion_2">
+                                <div class="card-body">
+                                    <p>Chúng tôi tuân thủ các quy định về bảo mật dữ liệu và sử dụng công nghệ mã hóa để bảo
+                                        vệ thông tin cá nhân của bạn.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <aside class="sidebar-area ltn__right-sidebar mt-60">
-                        <!-- Banner Widget -->
                         <div class="widget ltn__banner-widget">
                             <a href="shop.html"><img src="{{ asset('assets/clients/img/bg/12.png') }}"
-                                    alt="Banner Image"></a>
+                                    alt="Banner"></a>
                         </div>
                     </aside>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FAQ AREA START -->
+    <!-- KHU VỰC CÂU HỎI THƯỜNG GẶP KẾT THÚC -->
 
-    <!-- NEWSLETTER AREA START -->
+    <!-- KHU VỰC ĐĂNG KÝ NHẬN TIN BẮT ĐẦU -->
     <div class="ltn__newsletter-area section-bg-1 bg-overlay-black-90 pt-110 pb-90 bg-image" data-bg="img/bg/2.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="ltn__newsletter-inner text-center">
-                        <h1 class="white-color">We make your inbox better</h1>
-                        <p class="white-color">Sign up to our newsletter to receive grooming tips, style
-                            inspiration, <br> exclusive access to pre-launch product pricing and more.</p>
-                        <form action="#" class="ltn__form-box">
-                            <input type="email" name="email" placeholder="Email*">
-                            <div class="btn-wrapper">
-                                <button class="theme-btn-1 btn btn-effect-1 text-uppercase"
-                                    type="submit">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
+        <div class="container text-center">
+            <h1 class="white-color">Chúng tôi mang đến cho bạn hộp thư tốt hơn</h1>
+            <p class="white-color">Đăng ký nhận bản tin để nhận mẹo mua sắm, cảm hứng phong cách,<br> và ưu đãi độc quyền
+                sớm nhất.</p>
+            <form action="#" class="ltn__form-box">
+                <input type="email" name="email" placeholder="Email*">
+                <div class="btn-wrapper">
+                    <button class="theme-btn-1 btn btn-effect-1 text-uppercase" type="submit">Đăng ký</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- NEWSLETTER AREA END -->
+    <!-- KHU VỰC ĐĂNG KÝ NHẬN TIN KẾT THÚC -->
 @stop
