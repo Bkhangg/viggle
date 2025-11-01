@@ -65,10 +65,7 @@ php artisan migrate --seed
 npm install
 npm run dev      # hoặc: npm run build
 
-# 7) Liên kết storage (để public/uploads hoạt động)
-php artisan storage:link
-
-# 8) Chạy server dev
+# 7) Chạy server dev
 php artisan serve
 ```
 
