@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('clients.pages.home_client');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('clients.pages.about');
@@ -25,6 +25,11 @@ Route::get('/faq', function () {
 
 Route::get('/register', [AuthController::class,'showRegisterForm'])->name('register');
 Route::post('/register', [AuthController::class,'register'])->name('post-register');
+
+Route::get('/login', [AuthController::class,'showloginForm'])->name('login');
+Route::post('/login', [AuthController::class,'login'])->name('post-login');
+
+Route::get('/logout', [AuthController::class,'logout'])->name('post-logout');
 
 // Activation Register
 Route::get('/activate/{token}', [AuthController::class,'activate'])->name('activate');
