@@ -6,9 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Mail\ActivationMail;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
+
 
 class AuthController extends Controller
 {
@@ -65,6 +67,41 @@ class AuthController extends Controller
         Mail::to($request->email)->send(new ActivationMail($token,$user));
 
         toastr()->success('Đăng ký tài khoản thành công!. vui lòng check email để kích hoạt tài khoản');
+        return redirect()->route('login');
+
+    }
+
+    public function showloginForm() {
+        return view('clients.pages.login');
+    }
+
+    public function login(Request $request)
+    {
+        // Xác thực dữ liệu từ form đăng nhập
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ], [
+            'email.required' => 'Vui lòng nhập địa chỉ email.',
+            'email.email' => 'Định dạng email không đúng.',
+
+            'password.required' => 'Vui lòng nhập mật khẩu.',
+            'password.min' => 'Mật khẩu phải có ít nhất 6 ký tự.',
+        ]);
+
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'status' => 'active'])) {
+            if (in_array(Auth::user()->role->name,['customer'])) {
+                $request->session()->regenerate();
+                toastr()->success('Đăng nhập thành công');
+                return redirect()->intended(route('home'));
+            } else {
+                Auth::logout();
+                toastr()->warning('Bạn không có quyền truy cập vào tài khoản này.');
+                return redirect()->back();
+            }
+        }
+
+        toastr()->error('Thông tin đăng nhập không chính xác hoặc tài khoản chưa kích hoạt.');
         return redirect()->back();
 
     }
@@ -78,11 +115,20 @@ class AuthController extends Controller
             $user->save();
 
             toastr()->success('Kích hoạt tài khoản thành công!');
-            return redirect()->back();
+            return redirect()->route('login');
         }
 
         toastr()->error('Token không hợp lệ hoặc đã hết hạn!');
-        return redirect()->back();
+        return redirect()->route('login');
+    }
+
+    public function logout(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        toastr()->success('Đăng xuất thành công!');
+        return redirect()->route('login');
+
     }
 }
 
