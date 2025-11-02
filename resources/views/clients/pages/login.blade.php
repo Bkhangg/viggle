@@ -21,7 +21,7 @@
                 <!-- Form đăng nhập -->
                 <div class="col-lg-6">
                     <div class="account-login-inner">
-                        <form action="{{ route('login') }}" method="POST" class="ltn__form-box contact-form-box">
+                        <form action="{{ route('login') }}" method="POST" class="ltn__form-box contact-form-box" id="login-form">
                             @csrf
                             <input type="email" name="email" placeholder="Email*" value="{{ old('email') }}"
                                 autocomplete="email" autofocus>
