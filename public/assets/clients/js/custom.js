@@ -39,4 +39,55 @@ $(document).ready(function () {
             e.preventDefault();
         }
     });
+
+    $('#login-form').on('submit', function (e) {
+        toastr.clear();
+        let email = $('input[name="email"]').val()?.trim() || '';
+        let password = $('input[name="password"]').val() || '';
+        let errorMessage = '';
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            errorMessage += 'Email không hợp lệ.<br>';
+        }
+
+        if (password.length < 6) {
+            errorMessage += 'Mật khẩu phải có ít nhất 6 ký tự.<br>';
+        }
+
+        // ✅ Nếu có lỗi thì hiện toastr.error
+        if (errorMessage !== '') {
+            toastr.error(errorMessage, 'Lỗi');
+            e.preventDefault();
+        }
+    });
+
+    $('#reset-password-form').on('submit', function (e) {
+        let email = $('input[name="email"]').val()?.trim() || '';
+        let password = $('input[name="password"]').val() || '';
+        let confirmPassword = $('input[name="password_confirmation"]').val() || '';
+
+        let errorMessage = '';
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            errorMessage += 'Email không hợp lệ.<br>';
+        }
+
+        if (password.length < 6) {
+            errorMessage += 'Mật khẩu phải có ít nhất 6 ký tự.<br>';
+        }
+
+        if (password !== confirmPassword) {
+            errorMessage += 'Mật khẩu xác nhận không khớp.<br>';
+        }
+
+        // ✅ Nếu có lỗi thì hiện toastr.error
+        if (errorMessage !== '') {
+            toastr.error(errorMessage, 'Lỗi');
+            e.preventDefault();
+        }
+    });
+
+
 });
