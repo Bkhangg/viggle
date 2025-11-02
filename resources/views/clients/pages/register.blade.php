@@ -73,7 +73,7 @@
                                 <a href="#">ĐIỀU KHOẢN SỬ DỤNG &nbsp; &nbsp; | &nbsp; &nbsp; CHÍNH SÁCH BẢO MẬT</a>
                             </p>
                             <div class="go-to-btn mt-50">
-                                <a href="login.html">ĐÃ CÓ TÀI KHOẢN? ĐĂNG NHẬP TẠI ĐÂY</a>
+                                <a href="{{ route('login') }}">ĐÃ CÓ TÀI KHOẢN? ĐĂNG NHẬP TẠI ĐÂY</a>
                             </div>
                         </div>
                     </div>
