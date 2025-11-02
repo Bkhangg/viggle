@@ -55,7 +55,7 @@ composer install
 # 3) Sao chép file .env mẫu
 dùng lệnh dưới tạo file .env để cấu hình
 touch .env
-sau đó sao chép các nội dung file .env ở dưới mục thứ 7 vào
+sau đó sao chép các nội dung file .env ở phần cấu hình .ENV ở phần dưới vào
 (Nếu có tồn tại file .env.example thì chạy lệnh cp .env.example .env )
 
 # 4) Tạo APP_KEY
