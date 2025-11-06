@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Clients\AccountController;
 use App\Http\Controllers\Clients\AuthController;
 use App\Http\Controllers\Clients\ForgotPasswordController;
 use App\Http\Controllers\Clients\ResetPasswordController;
@@ -50,4 +51,6 @@ Route::get('/activate/{token}', [AuthController::class,'activate'])->name('activ
 Route::middleware(['auth.custom'])->group(function() {
     // Logout
     Route::get('/logout', [AuthController::class,'logout'])->name('logout');
+    // Account
+    Route::get('/account', [AccountController::class,'index'])->name('index');
 });

@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="{{ asset('assets/clients/css/style.css') }}">
     <!-- Responsive css -->
     <link rel="stylesheet" href="{{ asset('assets/clients/css/responsive.css') }}">
+
     <!-- Toastr CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="{{ asset('assets/clients/css/custom.css') }}">
 
 </head>
 
