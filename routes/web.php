@@ -52,5 +52,8 @@ Route::middleware(['auth.custom'])->group(function() {
     // Logout
     Route::get('/logout', [AuthController::class,'logout'])->name('logout');
     // Account
-    Route::get('/account', [AccountController::class,'index'])->name('index');
+    Route::prefix('account')->name('account.')->group(function () {
+        Route::get('/', [AccountController::class,'index'])->name('index');
+        Route::put('/update', [AccountController::class,'update'])->name('update');
+    });
 });
