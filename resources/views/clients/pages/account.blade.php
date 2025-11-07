@@ -110,13 +110,15 @@
                                         <div class="tab-pane fade" id="liton_tab_account">
                                             <div class="ltn__myaccount-tab-content-inner">
                                                 <div class="ltn__form-box">
-                                                    <form action="#" method="POST" enctype="multipart/form-data">
+                                                    <form action="{{ route('account.update') }}" method="POST"
+                                                        enctype="multipart/form-data" id="update-account">
+
                                                         @method('PUT')
 
                                                         <div class="col-md-12 text-center mb-3">
                                                             <div class="profile-pic-container">
-                                                                <img src="{{ $user->avatar }}" alt="Avatar"
-                                                                    id="preview-image" class="profile-pic">
+                                                                <img src="{{ Str::startsWith($user->avatar, ['http://', 'https://']) ? $user->avatar : asset('storage/' . $user->avatar) }}"
+                                                                    alt="Avatar" id="preview-image" class="profile-pic">
                                                                 <input type="file" name="avatar" id="avatar"
                                                                     accept="image/*" class="d-none">
                                                             </div>
@@ -126,36 +128,43 @@
                                                             <div class="col-md-6">
                                                                 <label for="ltn__name">Họ và Tên</label>
                                                                 <input type="text" name="ltn__name" id="ltn__name"
-                                                                    value="{{ $user->name }}" required>
+                                                                    value="{{ old('ltn__name', $user->name) }}" required
+                                                                    minlength="3" autocomplete="name">
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <label for="ltn__phone_number">Số điện thoại</label>
-                                                                <input type="number" name="ltn__phone_number"
-                                                                    id="ltn__phone_number" value="{{ $user->phone_number }}"
-                                                                    required>
+                                                                <input type="text" name="ltn__phone_number"
+                                                                    id="ltn__phone_number"
+                                                                    value="{{ old('ltn__phone_number', $user->phone_number) }}"
+                                                                    required pattern="^[0-9]{9,11}$" maxlength="11"
+                                                                    inputmode="numeric" autocomplete="tel">
                                                             </div>
 
                                                             <div class="col-md-6">
-                                                                <label>Email* (Email không được thay đổi):</label>
-                                                                <input type="text" name="ltn__email_number"
+                                                                <label for="ltn__email_number">Email* (không thể thay
+                                                                    đổi)</label>
+                                                                <input type="email" name="ltn__email_number"
                                                                     id="ltn__email_number" value="{{ $user->email }}"
                                                                     readonly>
                                                             </div>
 
                                                             <div class="col-md-6">
-                                                                <label>Địa chỉ</label>
-                                                                <input type="text" name="ltn__address_number"
-                                                                    id="ltn__address_number" value="{{ $user->address }}"
-                                                                    readonly>
+                                                                <label for="ltn__address">Địa chỉ</label>
+                                                                <input type="text" name="ltn__address" id="ltn__address"
+                                                                    value="{{ old('ltn__address', $user->address) }}"
+                                                                    required minlength="5" autocomplete="street-address">
                                                             </div>
                                                         </div>
+
                                                         <div class="btn-wrapper">
                                                             <button type="submit"
-                                                                class="btn theme-btn-1 btn-effect-1 text-uppercase">Lưu thay
-                                                                đổi</button>
+                                                                class="btn theme-btn-1 btn-effect-1 text-uppercase">
+                                                                Lưu thay đổi
+                                                            </button>
                                                         </div>
                                                     </form>
+
                                                 </div>
                                             </div>
                                         </div>
